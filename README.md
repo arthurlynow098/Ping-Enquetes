@@ -4,7 +4,7 @@
 
 <p align="center">Criação e votação em enquetes com persistência em JSON e controle de sessão.</p>
 
-<p align="center"><img src="assets/docs/tags.svg" alt="C# · ASP.NET Core · JSON" width="72%"></p>
+<p align="center"><img src="assets/docs/tags.svg" alt="C# · ASP.NET Core · JSON" width="100%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
@@ -16,11 +16,12 @@
 
 ![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
 
-| Área | O que você encontra | Acesso direto |
-|---|---|---|
-| **Enquetes** | Ações de criação e consulta de enquetes. | [Abrir enquetes →](WebApplication1/Controllers/EnqueteController.cs) |
-| **Persistência** | Acesso aos dados de enquetes. | [Abrir persistência →](WebApplication1/Services/PollRepository.cs) |
-| **Telas** | Páginas Razor de interação com as enquetes. | [Abrir telas →](WebApplication1/Views/Enquete) |
+<table width="100%">
+<tr><th align="left">Área</th><th align="left">O que você encontra</th><th align="left">Acesso direto</th></tr>
+<tr><td><strong>Enquetes</strong></td><td>Ações de criação e consulta de enquetes.</td><td><a href="WebApplication1/Controllers/EnqueteController.cs">Abrir enquetes →</a></td></tr>
+<tr><td><strong>Persistência</strong></td><td>Acesso aos dados de enquetes.</td><td><a href="WebApplication1/Services/PollRepository.cs">Abrir persistência →</a></td></tr>
+<tr><td><strong>Telas</strong></td><td>Páginas Razor de interação com as enquetes.</td><td><a href="WebApplication1/Views/Enquete">Abrir telas →</a></td></tr>
+</table>
 
 <a id="visão-geral"></a>
 
