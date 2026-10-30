@@ -4,21 +4,33 @@
 
 <p align="center">Criação e votação em enquetes com persistência em JSON e controle de sessão.</p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/C%23-C52E36?style=flat-square" alt="C#">
-  <img src="https://img.shields.io/badge/ASP.NET%20Core-24272E?style=flat-square" alt="ASP.NET Core">
-  <img src="https://img.shields.io/badge/JSON-24272E?style=flat-square" alt="JSON">
-</p>
+<p align="center"><img src="assets/docs/tags.svg" alt="C# · ASP.NET Core · JSON" width="72%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
 ---
 
-## Visão geral
+<a id="explore-o-projeto"></a>
+
+![Explore o projeto](assets/docs/section-01.svg)
+
+![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
+
+| Área | O que você encontra | Acesso direto |
+|---|---|---|
+| **Enquetes** | Ações de criação e consulta de enquetes. | [Abrir enquetes →](WebApplication1/Controllers/EnqueteController.cs) |
+| **Persistência** | Acesso aos dados de enquetes. | [Abrir persistência →](WebApplication1/Services/PollRepository.cs) |
+| **Telas** | Páginas Razor de interação com as enquetes. | [Abrir telas →](WebApplication1/Views/Enquete) |
+
+<a id="visão-geral"></a>
+
+![Visão geral](assets/docs/section-02.svg)
 
 A arquitetura utiliza uma camada de serviços dedicada (PollRepository e SessionDataService) que persiste enquetes e usuários de forma estruturada em arquivos JSON (Data/polls.json e Data/users.json), garantindo portabilidade imediata e execução leve em qualquer ambiente com SDK .NET.
 
-## Recursos
+<a id="recursos"></a>
+
+![Recursos](assets/docs/section-03.svg)
 
 | Recurso | Como funciona |
 |---|---|
@@ -27,7 +39,9 @@ A arquitetura utiliza uma camada de serviços dedicada (PollRepository e Session
 | Persistência JSON autocontida | PollRepository lê e grava os dados diretamente em Data/polls.json e Data/users.json. |
 | Interface Razor responsiva | Telas organizadas por contexto (Account, Enquete, Home) com atualização imediata dos percentuais de votação. |
 
-## Tecnologias
+<a id="tecnologias"></a>
+
+![Tecnologias](assets/docs/section-04.svg)
 
 - **C# e ASP.NET Core (.NET 9)** no back-end e nos controladores MVC;
 - **Serviços injetados (PollRepository, SessionDataService)** para manipulação de estado e armazenamento;
@@ -52,7 +66,7 @@ flowchart LR
 ```text
 Ping-Enquetes/
 ├── assets/
-│   └── project-animal.png          Emblema do projeto
+│   └── banner-v2.png               Banner do projeto
 ├── WebApplication1/
 │   ├── Controllers/                        AccountController, EnqueteController e HomeController
 │   ├── Data/                               polls.json e users.json (persistência local)
@@ -66,7 +80,9 @@ Ping-Enquetes/
 
 </details>
 
-## Como executar
+<a id="como-executar"></a>
+
+![Como executar](assets/docs/section-05.svg)
 
 1. Clone o repositório:
    ```powershell
@@ -79,7 +95,9 @@ Ping-Enquetes/
    ```
 3. Abra o endereço local exibido no terminal (ex.: http://localhost:5000) para criar e votar em enquetes imediatamente.
 
-## Decisões técnicas
+<a id="decisões-técnicas"></a>
+
+![Decisões técnicas](assets/docs/section-06.svg)
 
 - **Repositório em JSON (PollRepository):** permite clonar e executar o projeto instantaneamente sem depender de provisionamento prévio de banco de dados SQL.
 
