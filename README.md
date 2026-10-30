@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="assets/project-animal.png" alt="Emblema de Ping-Enquetes" width="144" height="144">
+  <img src="assets/banner-v2.png" alt="Ping-Enquetes" width="100%">
 </p>
-
-<h1 align="center">Ping-Enquetes</h1>
 
 <p align="center">Criação e votação em enquetes com persistência em JSON e controle de sessão.</p>
 
